@@ -14,7 +14,7 @@ def float32_publisher():
 	rospy.init_node('gripper_out', anonymous=True)
 
 	# Create a publisher for the Float32 data on the '/fgripper_signal' topic
-	pub = rospy.Publisher('/gripper_signal', Float32, queue_size=10)
+	pub = rospy.Publisher('/right_gripper_signal', Float32, queue_size=10)
 
 	# Set the loop rate (in Hz)
 	rate = rospy.Rate(1)  # 1 Hz We should change this
